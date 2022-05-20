@@ -1,0 +1,40 @@
+.company {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+  width: 700px;
+  margin-bottom: 40px;
+  border: 1px solid black;
+  padding: 20px 20px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  transition: 0.5s;
+}
+.company img{
+    transition: all 0.2s ease-in-out;
+}
+.title{
+    position: relative;
+}
+.company button{
+    margin-left: 80px;
+    margin-top: 100px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    padding: 5px 10px;
+    display:none;
+}
+.company:hover{
+    transform: translateY(-1rem);
+    box-shadow: 15px 15px;
+}
+.company:hover img{
+    filter: brightness(50%);
+}
+.company:hover button{
+   display: block;
+   background-color: black;
+   color: white;
+   filter: none;
+}
